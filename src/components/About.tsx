@@ -28,7 +28,7 @@ const About = () => {
             About Me
           </h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-            I am a Computer Science student at the University of Calgary, passionate about blending technical expertise with real-world problem-solving. My academic journey has been enriched by diverse coursework in computational systems, algorithm design, and even biology, reflecting my curiosity and adaptability. I've had the opportunity to apply my skills in meaningful ways, from developing data models to completing personal projects that challenge and excite me.
+            I am a Computer Science Graduate from the University of Calgary, passionate about blending technical expertise with real-world problem-solving. My academic journey has been enriched by diverse coursework in computational systems, algorithm design, and even biology, reflecting my curiosity and adaptability. I've had the opportunity to apply my skills in meaningful ways, from developing data models to completing personal projects that challenge and excite me.
           </p>
           <p className="text-lg text-muted-foreground max-w-4xl mx-auto leading-relaxed mt-6">
             Beyond academics, my professional experiences span roles such as RPA Student Developer, where I spearheaded end-to-end automation projects, and Pavement Maintenance Technician, where I honed my precision, time management, and adaptability. My volunteer work—ranging from coaching youth basketball to mentoring at summer camps—underscores my commitment to community, teamwork, and leadership.

@@ -7,9 +7,9 @@ const Projects = () => {
       title: "Process Automation Project",
       description: "End-to-end automation project developed as RPA Student Developer, showcasing skills in process optimization and technical implementation.",
       image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&h=300&fit=crop&crop=center",
-      tags: ["RPA", "Automation", "Process Optimization"],
-      liveUrl: "#",
-      githubUrl: "#",
+      tags: ["RPA", "Automation", "Process Optimization","BluePrism"],
+      showLiveDemo: false,
+      showCode: false,
     },
     {
       title: "Data Modelling Project",
@@ -18,6 +18,8 @@ const Projects = () => {
       tags: ["Data Analysis", "Data Modelling", "Python"],
       liveUrl: "#",
       githubUrl: "#",
+      showLiveDemo: true,
+      showCode: true,
     },
     {
       title: "Frontend Development",
@@ -26,6 +28,8 @@ const Projects = () => {
       tags: ["React", "HTML & CSS", "UI/UX"],
       liveUrl: "#",
       githubUrl: "#",
+      showLiveDemo: true,
+      showCode: true,
     },
     {
       title: "Academic Research Project",
@@ -34,6 +38,8 @@ const Projects = () => {
       tags: ["Algorithms", "Research", "Computer Science"],
       liveUrl: "#",
       githubUrl: "#",
+      showLiveDemo: false,
+      showCode: true,
     },
   ];
 
@@ -83,26 +89,32 @@ const Projects = () => {
                   ))}
                 </div>
                 
-                <div className="flex space-x-4">
-                  <a 
-                    href={project.liveUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center space-x-2 bg-primary text-primary-foreground px-4 py-2 rounded-lg hover:bg-primary/90 transition-colors duration-300"
-                  >
-                    <ExternalLink size={16} />
-                    <span>Live Demo</span>
-                  </a>
-                  <a 
-                    href={project.githubUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center space-x-2 border border-border px-4 py-2 rounded-lg hover:bg-secondary transition-colors duration-300"
-                  >
-                    <Github size={16} />
-                    <span>Code</span>
-                  </a>
-                </div>
+                {(project.showLiveDemo || project.showCode) && (
+                  <div className="flex space-x-4">
+                    {project.showLiveDemo && (
+                      <a 
+                        href={project.liveUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center space-x-2 bg-primary text-primary-foreground px-4 py-2 rounded-lg hover:bg-primary/90 transition-colors duration-300"
+                      >
+                        <ExternalLink size={16} />
+                        <span>Live Demo</span>
+                      </a>
+                    )}
+                    {project.showCode && (
+                      <a 
+                        href={project.githubUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center space-x-2 border border-border px-4 py-2 rounded-lg hover:bg-secondary transition-colors duration-300"
+                      >
+                        <Github size={16} />
+                        <span>Code</span>
+                      </a>
+                    )}
+                  </div>
+                )}
               </div>
             </div>
           ))}

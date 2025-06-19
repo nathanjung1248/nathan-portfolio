@@ -30,7 +30,7 @@ const Navigation = () => {
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           <div className="text-xl font-bold text-foreground">
-            Portfolio
+            Nathan Jung's Portfolio
           </div>
           
           {/* Desktop Menu */}

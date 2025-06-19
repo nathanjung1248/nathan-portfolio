@@ -27,7 +27,7 @@ const Hero = () => {
               <Github size={24} />
             </a>
             <a 
-              href="https://linkedin.com" 
+              href="https://www.linkedin.com/in/nathan-jung-874196240" 
               target="_blank" 
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-primary text-primary-foreground hover:bg-primary/90 transition-all duration-300 hover:scale-110"
